@@ -13,9 +13,16 @@ header {
     text-align: center;
 }
 
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -28,8 +35,14 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+main {
     padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 footer {
@@ -40,11 +53,7 @@ footer {
 }
 
 /* Estilos específicos */
-h1 {
-    margin: 0;
-}
-
-h2 {
+h1, h2 {
     color: #333;
 }
 

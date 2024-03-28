@@ -3,54 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Presentación - Tu Nombre</title>
+    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Presentación</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
     </header>
-    
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Aquí puedes escribir una breve descripción sobre ti y tus intereses en la informática.</p>
-    </section>
 
-    <section id="experiencia">
-        <h2>Experiencia</h2>
-        <p>Describe tu experiencia en informática, incluyendo proyectos destacados, empleos anteriores, etc.</p>
-    </section>
-
-    <section id="habilidades">
-        <h2>Habilidades</h2>
+    <nav>
         <ul>
-            <li>Desarrollo web</li>
-            <li>Programación en Python</li>
-            <li>Manejo de bases de datos</li>
-            <!-- Agrega más habilidades según corresponda -->
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme a través de:</p>
-        <ul>
-            <li>Email: tu@email.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil">Tu Perfil</a></li>
-            <!-- Agrega más información de contacto si lo deseas -->
-        </ul>
-    </section>
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Aquí puedes escribir una breve descripción sobre ti y tus intereses en la informática.</p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Describe tu experiencia en informática, incluyendo proyectos destacados, empleos anteriores, etc.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desarrollo web</li>
+                <li>Programación en Python</li>
+                <li>Manejo de bases de datos</li>
+                <!-- Agrega más habilidades según corresponda -->
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de:</p>
+            <ul>
+                <li>Email: tu@email.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/tu-perfil">Tu Perfil</a></li>
+                <!-- Agrega más información de contacto si lo deseas -->
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 - Tu Nombre</p>
+        <p>&copy; {{ site.title }} - {{ site.author }}</p>
     </footer>
 </body>
 </html>
