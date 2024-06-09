@@ -1,62 +1,417 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentacion</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1d1c1c;
-            padding: 20px;
-            text-align: center;
-        }
-        h1, h2 {
-            margin: 10px 0;
-        }
-        section {
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .skill {
-            margin-bottom: 10px;
-            padding: 10px;
-            background-color: #1f1e1e;
-            border-radius: 5px;
-        }
-        .skill-list {
-            list-style: none;
-            padding: 0;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Josu's Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Imperial
+    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
+
 <body>
-    <header>
-        <h1>Jose Luis Galan Algarin</h1>
-        <p>Estudiante de Grado Superior en Sistemas Microinformáticos y Redes</p>
-    </header>
-    <section class="container">
-        <h2>Mis conocimientos</h2>
-        <ul class="skill-list">
-            <li class="skill">Administración avanzada de sistemas operativos Windows y Linux</li>
-            <li class="skill">Configuración y mantenimiento de redes informáticas</li>
-            <li class="skill">Instalación y gestión de servidores (Windows Server, Linux)</li>
-            <li class="skill">Resolución de problemas técnicos de hardware y software</li>
-            <li class="skill">Implementación de medidas de seguridad informática</li>
-            <li class="skill">Conocimientos de programacion (Java)</li>
-            <li class="skill">Gestión de bases de datos SQL (MySQL)</li>
-            <li class="skill">Experiencia en virtualización (VMware, VirtualBox)</li>
-            <li class="skill">Conocimientos básicos de cloud computing</li>
-        </ul>
-    </section>
+  <div id="preloader"></div>
+
+  <!--==========================
+  Hero Section
+  ============================-->
+<section id="hero">
+    <div class="hero-container">
+        <div class="wow fadeIn">
+            <div class="hero-logo">
+                <img class="" src="img/logo.png" alt="Foto del perfil">
+            </div>
+
+            <h1>Bienvenido a mi portafolio</h1>
+            <h2>Desarrollador de Aplicaciones Multiplataforma con experiencia en <span class="rotating">Java, Python, Html, JavaScript</span></h2>
+            <div class="actions">
+                <a href="#about" class="btn-get-started">Sobre mí</a>
+                <a href="#services" class="btn-services">Habilidades</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+        <div id="logo" class="pull-left">
+            <a href="#hero"><img src="img/logo.png" alt="" title="" /></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Juan Pérez</a></h1>-->
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="menu-active"><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Habilidades</a></li>
+                <li><a href="#portfolio">Proyectos</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#team">Equipo</a></li>
+                <li class="menu-has-children"><a href="">Más</a>
+                    <ul>
+                        <li><a href="#">Certificados</a></li>
+                        <li class="menu-has-children"><a href="#">Experiencia</a>
+                            <ul>
+                                <li><a href="#">Trabajo 1</a></li>
+                                <li><a href="#">Trabajo 2</a></li>
+                                <li><a href="#">Trabajo 3</a></li>
+                                <li><a href="#">Trabajo 4</a></li>
+                                <li><a href="#">Trabajo 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Educación</a></li>
+                        <li><a href="#">Hobbies</a></li>
+                        <li><a href="#">Idiomas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+
+  <!-- #header -->
+
+  <!--==========================
+  About Section
+  ============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Sobre mí</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Desarrollador de aplicaciones multiplataforma con una sólida formación en diversas tecnologías y una pasión por crear soluciones innovadoras.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+        <div class="row">
+
+            <div class="col-lg-6 about-img">
+                <img src="img/about-img.jpg" alt="Foto sobre mí">
+            </div>
+
+            <div class="col-md-6 about-content">
+                <h2 class="about-title">Experiencia y Habilidades</h2>
+                <p class="about-text">
+                    Soy un desarrollador con experiencia en lenguajes como Java, Python, Html y JavaScript y en frameworks como Eclipse o Visual Code. Mi objetivo es crear aplicaciones eficientes y fáciles de usar que solucionen problemas del mundo real.
+                </p>
+                <p class="about-text">
+                    He trabajado en proyectos que abarcan desde aplicaciones móviles hasta sistemas de gestión empresarial, siempre buscando mejorar mis habilidades y aprender nuevas tecnologías.
+                </p>
+                <p class="about-text">
+                    Disfruto colaborando con equipos multidisciplinarios y aportando ideas innovadoras que mejoren la experiencia del usuario y optimicen los procesos de desarrollo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!--==========================
+  Services Section
+  ============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Habilidades</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Las siguientes son algunas de las habilidades clave que he desarrollado a lo largo de mi carrera en desarrollo de aplicaciones multiplataforma.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-mobile"></i></div>
+                <h4 class="service-title"><a href="">Desarrollo de Aplicaciones Móviles</a></h4>
+                <p class="service-description">Experiencia en la creación de aplicaciones móviles para Android e iOS.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-code"></i></div>
+                <h4 class="service-title"><a href="">Visual Studio</a></h4>
+                <p class="service-description">Desarrollo de aplicaciones Python con Visual Studio.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-code-fork"></i></div>
+                <h4 class="service-title"><a href="">Integración de APIs</a></h4>
+                <p class="service-description">Habilidad en la integración de APIs RESTful y servicios web para mejorar la funcionalidad de las aplicaciones.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-photo"></i></div>
+                <h4 class="service-title"><a href="">UI/UX Design</a></h4>
+                <p class="service-description">Diseño de interfaces de usuario intuitivas y atractivas, centradas en la experiencia del usuario.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-database"></i></div>
+                <h4 class="service-title"><a href="">Gestión de Proyectos</a></h4>
+                <p class="service-description">Capacidad para gestionar proyectos de desarrollo de software desde la concepción hasta la entrega final.</p>
+            </div>
+            <div class="col-md-4 service-item">
+                <div class="service-icon"><i class="fa fa-line-chart"></i></div>
+                <h4 class="service-title"><a href="">Optimización de Rendimiento</a></h4>
+                <p class="service-description">Optimización de aplicaciones para asegurar su rendimiento y escalabilidad en diferentes dispositivos y plataformas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!--==========================
+  Subscrbe Section
+  ============================-->
+
+  <!--==========================
+  Porfolio Section
+  ============================-->
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Proyectos</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Estos son algunos de los proyectos en los que he trabajado, demostrando mis habilidades en desarrollo de aplicaciones multiplataforma.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-1.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 1</h4>
+                        <span>Aplicación de gestión de tareas</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-2.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 2</h4>
+                        <span>Plataforma de e-commerce</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-3.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 3</h4>
+                        <span>Aplicación de seguimiento de hábitos</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-4.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 4</h4>
+                        <span>Sistema de reservas</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-5.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 5</h4>
+                        <span>Aplicación de finanzas personales</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-6.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 6</h4>
+                        <span>Red social para deportistas</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-7.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 7</h4>
+                        <span>Aplicación de aprendizaje de idiomas</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="portfolio-item" style="background-image: url(img/portfolio-8.jpg);" href="">
+                    <div class="details">
+                        <h4>Proyecto 8</h4>
+                        <span>Sistema de gestión de inventarios</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+  <!--==========================
+  Testimonials Section
+  ============================-->
+
+  <!--==========================
+  Team Section
+  ============================-->
+ 
+  <!--==========================
+  Contact Section
+  ============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Contacto</h3>
+                <div class="section-title-divider"></div>
+                <p class="section-description">Puedes ponerte en contacto conmigo a través de los siguientes medios o enviando un mensaje directamente desde aquí.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-md-push-2">
+                <div class="info">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Buenos aires 60<br>Los palacios y villafranca, 41720</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p>joseluisgalanalgarin@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+34 644948717</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-5 col-md-push-2">
+                <div class="form">
+                    <div id="sendmessage">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4" data-msg="Por favor, ingresa al menos 4 caracteres" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Tu Correo" data-rule="email" data-msg="Por favor, ingresa un correo válido" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:8" data-msg="Por favor, ingresa al menos 8 caracteres de asunto" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor, escribe algo para nosotros" placeholder="Mensaje"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+  <!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+           <strong>José Luis Galán Algarín</strong>
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+            -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+
+
 </body>
+
 </html>
